@@ -1,0 +1,21 @@
+
+
+ul li::after {
+    content: ' test';
+    background-color: brown;
+}
+
+p::first-line{
+    background-color: blue;
+}
+
+p::selection{
+
+    background-color: chartreuse;
+    color: black;
+}
+
+::placeholder{
+    color:blue
+}
+

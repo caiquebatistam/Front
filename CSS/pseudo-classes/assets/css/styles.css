@@ -1,0 +1,37 @@
+.heading{
+    transition: all 1000ms ease-in-out;
+}
+
+.heading:hover{
+    background: red;
+}
+
+/*Para marcar links que já foram visitados ou não, segue exemplos abaixo*/
+
+
+a{
+    color:green;
+}
+
+
+a:link{
+    color: red;
+
+}
+a:visited{
+    color:blue
+}
+
+.input:focus{
+    box-shadow: 0 0 5px;
+    outline: red;
+}
+
+/*Pseudo classe :not() 
+este seletor de negação, nega algum elemento que você selecionar
+abaixo segue um pequeno exemplos, onde selecionamos o elemento p
+e negamos o elemento p que tem a class=".meio"*/
+
+p:not(.meio) {
+    color: aquamarine;
+}

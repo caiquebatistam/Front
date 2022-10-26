@@ -1,0 +1,48 @@
+/*seletor all, pega todos os elementos da pagina
+Geralmente seu uso é para zerar o margin e padding
+*/
+*{
+margin:0;
+padding:0;
+}
+
+/*Seletor de classe */
+
+.nome-da-classe{
+    color: red;
+}
+
+/*Seletor de tag */
+p {
+/* Neste caso, vai ser aplicado a todos os paragrafos do documento */
+}
+
+/*Agora segue um exemplo de um seletor por tag, só que mais
+especifico, suponha uqe a tag esteja dentro de varios elementos */
+
+body div section p{
+/* poderia tbm colocar um , h1, faria a mesma seleção só que pra h1
+tbm*/
+/* Este exemplo, eu especifiquei o caminho para selecionar
+a tag p
+    <body>
+        <div>
+            <section>
+                <p>
+*/
+}
+
+/*Seletor por class pai
+Neste caso estamos selecionando o h1, um elemento filho
+de dentro de uma uma div pai segue o exemplo a baixo ::after
+
+    <div class="nome-da-classe">
+        <h1>
+        <p>
+
+Então básicamente estou dizendo, que dentro do meu elemento pai,
+todo elemento filho h1, recebera a estilização.        
+*/
+.nome-da-classe h1 {
+    font: italic;
+}
